@@ -1,7 +1,7 @@
 body {
     /* если шрифт не загрузится Montserrat загрузится стандартные шрифты Arial или sans-serif*/
     font-family: "Montserrat" ,"Arial",sans-serif;
-    background: url('images/bg.png') center; 
+    background: url('images/bg.png') top; 
     background-color: #f4f9ff;
     font-size: 12px;
     min-height: 100vh;
@@ -71,7 +71,7 @@ body {
     background: #FFFFFF;
     margin: 0 auto;
     padding-bottom: 20px;
-    box-shadow: 0 6px 7px -4px rgba(0,0,0,0.4);
+    box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
     border-radius: 10px;
     max-width: 335px;
 }
@@ -127,25 +127,25 @@ li {
 
 .main-bottom {
     width: 90%;
-    height: 10px;
-    background-color: #fff;    
+    height: 20px;
+    background-color: rgba(49, 45, 45, 0.144);  
     position: absolute;
     left: 5%;
     bottom: -10px;
-    box-shadow: 0 6px 7px -4px rgba(0,0,0,0.4);
+    box-shadow: 0 13px 27px 19px rgba(0,0,0, 0.8);
     border-radius: 10px;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.1;
 }
 .main-bottom__blur {
     display: block;
     background: #000;
     mix-blend-mode: multiply;
     opacity: 0.71;
-    filter: blur(61.6647px);
+    filter: blur(71.6647px);
     border-radius: 16.2037px;
     z-index: -1;
-    height: 30px;
+    height: 40px;
     width: 100%;
 }
 
@@ -191,7 +191,7 @@ li {
         background: #FFFFFF;
         margin: 0 auto;
         padding-bottom: 20px;
-        box-shadow: 0 6px 7px -4px rgba(0,0,0,0.4);
+        box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
         border-radius: 10px;
         max-width: 735px;
     }
@@ -213,20 +213,70 @@ li {
         font-size: 12.9221px;
     }
 
+    .social-image {
+        width: 28px;
+        height: 28px;
+        margin: 0 5px;
+    }
+
 }
 
 
-@media (min-width: 1220px) {
+@media (min-width: 1152px) {
+
+    .header {
+        padding-top: 31px;
+    }
+
+    .header-head {
+        font-size: 22px;
+    }
+
     .header-sub {
         width: 429px;
-        margin: 15px auto;
+        margin: 5px auto 20px;
         font-size: 11px;
+        line-height: 20px;
         color: rgba(29, 36, 51, 0.5);
         text-align: center;
     }
 
+    .main-header {
+        font-size: 14px;
+        padding: 19px 0 19px 14px;
+        box-sizing: border-box;
+    }
+
+    .main-btn {
+        margin: 35px auto 7px;
+    }
+
+    .main-wrapper {
+        position: relative;
+        background: #FFFFFF;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        min-width: 320px;
+        
+    }
+
+    .main-bottom__blur {
+        display: block;
+        background: #000;
+        mix-blend-mode: multiply;
+        opacity: 0.71;
+        filter: blur(61.6647px);
+        border-radius: 16.2037px;
+        z-index: -1;
+        height: 40px;
+        width: 100%;
+    }
+
+
     ol {
-        margin: 4% auto;
+        margin: 27px auto 0px;
         text-align: left;
         list-style-position: inside;
         -moz-column-count: 3; /* Firefox */
@@ -238,8 +288,17 @@ li {
     li {
         list-style: none;
         color: rgba(29, 36, 51, 0.5);
-        padding: 4px 0 4px 45px;
+        padding: 5px 0 4px 45px;
         font-size: 12.9221px;
+    }
+
+
+    .footer {
+        min-height: 163px;
+    }
+
+    .footer-wrapper {
+        padding-top: 56px;
     }
 
     .social-image {
