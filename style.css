@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
     /* если шрифт не загрузится Montserrat загрузится стандартные шрифты Arial или sans-serif*/
     font-family: "Montserrat" ,"Arial",sans-serif;
@@ -5,8 +7,13 @@ body {
     background-color: #f4f9ff;
     font-size: 12px;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
 }
 
@@ -17,9 +24,16 @@ body {
 }
 
 .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
 
 }
@@ -28,16 +42,24 @@ body {
     display: block;
     width: 47px;
     height: 52px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .header-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     font-size: 18px;
     font-weight: normal;
     margin: 0 0 0 10px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     word-wrap: normal;
 
 }
@@ -63,7 +85,9 @@ body {
     position: relative;
     margin: 0;
     z-index: 1;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 .main-wrapper {
@@ -71,7 +95,8 @@ body {
     background: #FFFFFF;
     margin: 0 auto;
     padding-bottom: 20px;
-    box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
     border-radius: 10px;
     max-width: 335px;
 }
@@ -80,18 +105,22 @@ body {
     position: absolute;
     left: 20px;
     top: 15px;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
+    max-width: 5px;
+    width: 100%;
+    max-height: 5px;
+    height: 100%;
+    border-radius: 50%;
     background: #FF6259;
 }
 .main-dot__yellow {
     position: absolute;
     left: 26px;
     top: 15px;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
+    max-width: 5px;
+    width: 100%;
+    max-height: 5px;
+    height: 100%;
+    border-radius: 50%;
     margin-left: 6px;
     background: #FFC23D;
 }
@@ -99,9 +128,11 @@ body {
     position: absolute;
     left: 32px;
     top: 15px;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
+    max-width: 5px;
+    width: 100%;
+    max-height: 5px;
+    height: 100%;
+    border-radius: 50%;
     margin-left: 12px;
     background: #2DD04E;
 }
@@ -129,7 +160,8 @@ ol {
     -webkit-column-count: 1; /* Safari and Chrome */
     column-count: 1;
     list-style-type: decimal;
-    padding-inline-start: 0;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
 }
 li {
     list-style: none;
@@ -139,10 +171,16 @@ li {
 }
 
 .main-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-decoration: none;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 40px auto 20px;
     width: 115px;
     height: 30px;
@@ -162,7 +200,8 @@ li {
     position: absolute;
     left: 5%;
     bottom: -10px;
-    box-shadow: 0 13px 27px 19px rgba(0,0,0, 0.8);
+    -webkit-box-shadow: 0 13px 27px 19px rgba(0,0,0, 0.8);
+            box-shadow: 0 13px 27px 19px rgba(0,0,0, 0.8);
     border-radius: 10px;
     z-index: -1;
     opacity: 0.1;
@@ -172,7 +211,8 @@ li {
     background: #000;
     mix-blend-mode: multiply;
     opacity: 0.71;
-    filter: blur(71.6647px);
+    -webkit-filter: blur(71.6647px);
+            filter: blur(71.6647px);
     border-radius: 16.2037px;
     z-index: -1;
     height: 40px;
@@ -189,17 +229,31 @@ li {
 }
 
 .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 90px;
 }
 
 .social {
     margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center; 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
 }
 
 .social-image {
@@ -221,9 +275,46 @@ li {
         background: #FFFFFF;
         margin: 0 auto;
         padding-bottom: 20px;
-        box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+                box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
         border-radius: 10px;
         max-width: 735px;
+    }
+
+    .main-dot__red {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        max-width: 5px;
+        width: 100%;
+        max-height: 5px;
+        height: 100%;
+        border-radius: 50%;
+        background: #FF6259;
+    }
+    .main-dot__yellow {
+        position: absolute;
+        left: 26px;
+        top: 15px;
+        max-width: 5px;
+        width: 100%;
+        max-height: 5px;
+        height: 100%;
+        border-radius: 50%;
+        margin-left: 6px;
+        background: #FFC23D;
+    }
+    .main-dot__green {
+        position: absolute;
+        left: 32px;
+        top: 15px;
+        max-width: 5px;
+        width: 100%;
+        max-height: 5px;
+        height: 100%;
+        border-radius: 50%;
+        margin-left: 12px;
+        background: #2DD04E;
     }
 
     ol {
@@ -274,7 +365,8 @@ li {
     .main-header {
         font-size: 14px;
         padding: 19px 0 19px 14px;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     .main-btn {
@@ -286,7 +378,8 @@ li {
         background: #FFFFFF;
         margin: 0 auto;
         padding-bottom: 20px;
-        box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+                box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
         border-radius: 10px;
         min-width: 320px;
         
@@ -296,18 +389,22 @@ li {
         position: absolute;
         left: 34px;
         top: 25px;
-        width: 5px;
-        height: 5px;
-        border-radius: 100%;
+        max-width: 5px;
+        width: 100%;
+        max-height: 5px;
+        height: 100%;
+        border-radius: 50%;
         background: #FF6259;
     }
     .main-dot__yellow {
         position: absolute;
         left: 40px;
         top: 25px;
-        width: 5px;
-        height: 5px;
-        border-radius: 100%;
+        max-width: 5px;
+        width: 100%;
+        max-height: 5px;
+        height: 100%;
+        border-radius: 50%;
         margin-left: 6px;
         background: #FFC23D;
     }
@@ -315,9 +412,11 @@ li {
         position: absolute;
         left: 46px;
         top: 25px;
-        width: 5px;
-        height: 5px;
-        border-radius: 100%;
+        max-width: 5px;
+        width: 100%;
+        max-height: 5px;
+        height: 100%;
+        border-radius: 50%;
         margin-left: 12px;
         background: #2DD04E;
     }
@@ -327,7 +426,8 @@ li {
         background: #000;
         mix-blend-mode: multiply;
         opacity: 0.71;
-        filter: blur(61.6647px);
+        -webkit-filter: blur(61.6647px);
+                filter: blur(61.6647px);
         border-radius: 16.2037px;
         z-index: -1;
         height: 40px;
