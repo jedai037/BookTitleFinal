@@ -76,6 +76,36 @@ body {
     max-width: 335px;
 }
 
+.main-dot__red {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: #FF6259;
+}
+.main-dot__yellow {
+    position: absolute;
+    left: 26px;
+    top: 15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    margin-left: 6px;
+    background: #FFC23D;
+}
+.main-dot__green {
+    position: absolute;
+    left: 32px;
+    top: 15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    margin-left: 12px;
+    background: #2DD04E;
+}
+
 .main-header {
     background: #FFFFFF;
     color: #1D2433;
@@ -260,6 +290,36 @@ li {
         border-radius: 10px;
         min-width: 320px;
         
+    }
+
+    .main-dot__red {
+        position: absolute;
+        left: 34px;
+        top: 25px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: #FF6259;
+    }
+    .main-dot__yellow {
+        position: absolute;
+        left: 40px;
+        top: 25px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        margin-left: 6px;
+        background: #FFC23D;
+    }
+    .main-dot__green {
+        position: absolute;
+        left: 46px;
+        top: 25px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        margin-left: 12px;
+        background: #2DD04E;
     }
 
     .main-bottom__blur {
